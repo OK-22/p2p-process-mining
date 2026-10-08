@@ -1,0 +1,65 @@
+{
+  "source": "Synthetic (simulated purchase-to-pay log)",
+  "events": 92659,
+  "cases": 20000,
+  "median_days": 35.48051229533442,
+  "p90_days": 78.02470991188093,
+  "variants": 8,
+  "top10_share": 1.0,
+  "rework_cases": 2392,
+  "rework_pct": 0.1196,
+  "median_with_rework": 40.19743602821683,
+  "median_without_rework": 34.902120531128716,
+  "top_rework": [
+    [
+      "Record Goods Receipt",
+      2392
+    ]
+  ],
+  "top_transitions": [
+    [
+      "Record Goods Receipt -> Record Invoice Receipt",
+      20000,
+      14.45215770639882,
+      29.898716568033947,
+      289043.1541279764
+    ],
+    [
+      "Record Invoice Receipt -> Clear Invoice",
+      16330,
+      13.046024161992344,
+      27.294076079436845,
+      213041.57456533497
+    ],
+    [
+      "Create Purchase Order Item -> Record Goods Receipt",
+      17073,
+      10.39287360960082,
+      21.37151852397803,
+      177437.5311367148
+    ],
+    [
+      "Set Payment Block -> Remove Payment Block",
+      3670,
+      20.404337555774475,
+      44.77467229650012,
+      74883.91882969232
+    ],
+    [
+      "Remove Payment Block -> Clear Invoice",
+      3670,
+      13.034640112714218,
+      27.747533677702283,
+      47837.12921366118
+    ]
+  ],
+  "late_cut": 78.03630693920151,
+  "test_cases": 6000,
+  "flagged": 1860,
+  "flagged_pct": 0.31,
+  "base_rate": 0.09966666666666667,
+  "precision": 0.31451612903225806,
+  "recall": 0.9782608695652174,
+  "lift": 3.155680224403927,
+  "lead_median": 66.70517785318677
+}
